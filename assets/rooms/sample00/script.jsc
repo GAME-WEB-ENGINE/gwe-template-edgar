@@ -1,0 +1,44 @@
+[
+  {
+    "Id": "ON_INIT",
+    "Description": "ON INIT",
+    "Calls": [
+      {
+        "Name": "UI_CREATE_BACKGROUND",
+        "Args": ["assets/sprites/scene/data.json", "IDLE", true]
+      },
+      {
+        "Name": "UI_ANIMATE_BACKGROUND",
+        "Args": [0, "ui-background-fade-in 1s ease 0s 1 normal forwards"]
+      },
+      {
+        "Name": "UI_CREATE_AVATAR",
+        "Args": ["assets/sprites/ren/data.json", "IDLE", true, "RIGHT"]
+      },
+      {
+        "Name": "UI_ANIMATE_AVATAR",
+        "Args": [0, "ui-avatar-fade-in 1s ease 0s 1 normal forwards"]
+      },
+      {
+        "Name": "UI_CREATE_DIALOG",
+        "Args": ["Ren", "Bienvenue dans notre lycée le nouveau !"]
+      },
+      {
+        "Name": "UI_ANIMATE_AVATAR",
+        "Args": [0, "ui-avatar-fade-out 1s ease 0s 1 normal forwards"]
+      },
+      {
+        "Name": "UI_ANIMATE_BACKGROUND",
+        "Args": [0, "ui-background-fade-out 1s ease 0s 1 normal forwards"]
+      },
+      {
+        "Name": "UI_DESTROY_BACKGROUND",
+        "Args": [0]
+      },
+      {
+        "Name": "UI_DESTROY_AVATAR",
+        "Args": [0]
+      }
+    ]
+  }
+]
