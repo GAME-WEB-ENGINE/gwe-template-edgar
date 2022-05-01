@@ -212,3 +212,11 @@ class GameScreen extends GWE.Screen {
 }
 
 module.exports.GameScreen = GameScreen;
+
+// -------------------------------------------------------------------------------------------
+// HELPFUL
+// -------------------------------------------------------------------------------------------
+
+function CHECK_CONDITION(value1, cond, value2) {
+  return (cond == 'not equal' && value1 != value2) || (cond == 'equal' && value1 == value2) || (cond == 'is less than' && value1 < value2) || (cond == 'is greater than' && value1 > value2);
+}
