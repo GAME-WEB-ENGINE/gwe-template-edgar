@@ -1,21 +1,17 @@
 {
-    "ImageFile": "assets/sprites/scene/sprite.png",
-    "Frames": [
+  "ImageFile": "assets/sprites/scene/sprite.png",
+  "Animations": [
+    {
+      "Name": "IDLE",
+      "Frames": [
         {
-            "Name": "0000.png",
-            "X": 0,
-            "Y": 0,
-            "Width": 800,
-            "Height": 800
+          "X": 0,
+          "Y": 0,
+          "Width": 800,
+          "Height": 800
         }
-    ],
-    "Animations": [
-        {
-            "Name": "IDLE",
-            "Frames": [
-                "0000.png"
-            ],
-            "FrameDuration": 30
-        }
-    ]
+      ],
+      "FrameDuration": 30
+    }
+  ]
 }
